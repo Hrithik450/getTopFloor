@@ -1,7 +1,7 @@
 # GeTopFloor 🏢🚀
 
-> **The World's Most Interactive 3D Skyscraper Directory & Outbid Platform for Startups.**  
-> Outbid your rivals, claim the penthouse floor (#1), and put your company on the global stage.  
+> **The World's Most Interactive 3D Skyscraper Directory & Bidding Platform for Startups.**  
+> Outbid your rivals, claim the Penthouse Floor (#1), and put your startup on the global stage.  
 > *Backed by [BharatHunt](https://bharathunt.org)*
 
 [![Next.js](https://img.shields.io/badge/Next.js-15.5-black?style=flat&logo=next.js)](https://nextjs.org/)
@@ -199,13 +199,20 @@ cp .env.example .env.local
 - **Node.js**: `v20.x` or higher
 - **pnpm**: `v9.x` or higher
 - **PostgreSQL**: Local PostgreSQL instance, Supabase, Neon, or Docker container
+- **Git**: For cloning and version control
 
-### 2. Install Dependencies
+### 2. Clone the Repository
+```bash
+git clone https://github.com/Hrithik450/topstartups.git
+cd topstartups
+```
+
+### 3. Install Dependencies
 ```bash
 pnpm install
 ```
 
-### 3. Database Setup & Push Schema
+### 4. Database Setup & Push Schema
 Configure `.env.local` with your PostgreSQL database URL, then push the schema:
 ```bash
 # Push Drizzle schema to database
@@ -215,7 +222,7 @@ pnpm run db:push
 pnpm run db:studio
 ```
 
-### 4. Run Development Server
+### 5. Run Development Server
 ```bash
 pnpm run dev
 ```
